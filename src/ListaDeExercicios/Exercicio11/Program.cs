@@ -9,7 +9,17 @@
              * Exemplo de entrada: A = 3, B = 3
              * Exemplo de saída: A + B = 6.
              */
-            Console.WriteLine("Hello, World!");
+            int A, B;
+
+            Console.WriteLine("Entre com um número:");
+            A = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Entre com um segundo número:");
+            B = Convert.ToInt32(Console.ReadLine());
+
+            var soma = (A + B);
+
+            Console.WriteLine($"Resultado da soma é {soma}");
         }
     }
 }

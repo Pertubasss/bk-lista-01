@@ -22,15 +22,10 @@
             C = Convert.ToInt32(Console.ReadLine());
 
             int somaAeB = A + B;
+            string saida = "A + B não é menor que C";
 
-            string saida = "A + B é menor que C";
-
-            //if (somaAeB > C)
-            //{
-            //    saida = "A + B é maior que C";
-            //}
-
-            saida = somaAeB > C ? "A + B é maior que C" : saida;
+            if (somaAeB < C)
+                saida = "A + B é menor que C";
 
             Console.WriteLine(saida);
 

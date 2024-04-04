@@ -44,7 +44,7 @@
             }
 
             string resultado = $"{pos1} , {pos2} , {pos3}";
-            Console.WriteLine($"Ordenação {resultado}");
+            Console.WriteLine($"Ordenação decrescente {resultado}");
         }
     }
 }

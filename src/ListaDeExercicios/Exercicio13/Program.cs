@@ -4,12 +4,30 @@
     {
         static void Main(string[] args)
         {
-            /*
-             * Ordenar três valores inteiros e diferentes em ordem decrescente.
-             * Exemplo de entrada: 5, 10, 3
-             * Exemplo de saída: Os números em ordem decrescente são 10, 5, 3.
-             */
-            Console.WriteLine("Hello, World!");
+            //Calcular o fatorial de um número e exibir o resultado.
+            //Exemplo de entrada: Número = 5
+            //Exemplo de saída: 5! = 120.
+
+            Console.Write(">>> Calcular o fatorial de um número e exibir o resultado <<<\n");
+
+            Console.Write("Digite um numero: ");
+
+            int num = Convert.ToInt32(Console.ReadLine());
+            int value = CalcFatorial(num);
+
+            Console.Write($"O resultado do fatorial do numero {num} é: {value}");
+        }
+
+        static int CalcFatorial(int num)
+        {
+            int value = 1;
+
+            for (int i = num; i >= 1; i--)
+            {
+                value *= i;
+            }
+
+            return value;
         }
     }
 }

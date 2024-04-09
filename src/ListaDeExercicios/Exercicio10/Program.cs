@@ -4,35 +4,25 @@
     {
         static void Main(string[] args)
         {
-            /*
-             * Identificar se um número é par ou ímpar.
-             * Exemplo de entrada: Número = 7
-             * Exemplo de saída: O número é ímpar.
-             */
+            //Identificar se um número é par ou ímpar.
 
-            int numero;
+            //Exemplo de entrada: Número = 7
+            //Exemplo de saída: O número é ímpar.
 
-            bool par = false;
-            bool impar = false;
 
-            Console.WriteLine("Entre com um número:");
-            numero = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(">>> Identificar se o numero é par ou impar <<<\n");
+            Console.Write("Digite o numero desejado: ");
 
-            par = numero % 2 == 0;
-            impar = numero % 2 == 1;
+            int numero = Convert.ToInt32(Console.ReadLine());
 
-            if (par)
+            if (numero % 2 == 0)
             {
-                Console.WriteLine("O número é par");
-                return;
+                Console.WriteLine("\nO numero digitado é PAR");
             }
-
-            if (impar)
+            else
             {
-                Console.WriteLine("O número é impar");
-                return;
+                Console.WriteLine("\nO numero digitado é ÍMPAR");
             }
-
         }
     }
 }

@@ -4,25 +4,27 @@
     {
         static void Main(string[] args)
         {
-            /*
-            Calcular a área de um terreno retangular.
+            //Calcular a área de um terreno retangular.
+            //Exemplo de entrada: Comprimento do terreno = 10 metros, Largura do terreno = 5 metros
+            //Fórmula: Área = Comprimento * Largura
+            //Exemplo de saída: A área do terreno é 50 metros quadrados.
 
-Exemplo de entrada: Comprimento do terreno = 10 metros, Largura do terreno = 5 metros
-Fórmula: Área = Comprimento * Largura
-Exemplo de saída: A área do terreno é 50 metros quadrados.
+            Console.WriteLine(">>> Calcular a área de um terreno retangular <<<");
 
-             */
-            Console.WriteLine("Calculo area terreno");
-            Console.WriteLine("\r\n\t Entre com o comprimento:");
-            var comprimento = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite o comprimento do terreno: ");
+            double comprimentoTerreno = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("\r\nEntre com a largura:");
-            var largura = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a largura do terreno: ");
+            double larguraTerreno = Convert.ToDouble(Console.ReadLine());
 
+            double area = CalcularAreaTerreno(comprimentoTerreno, larguraTerreno);
 
-            var areaTerreno = largura * comprimento;
+            Console.WriteLine($"A área do terreno é de {area}m²");
+        }
 
-            Console.WriteLine($"Area do terreno é de : {areaTerreno}");
+        static double CalcularAreaTerreno(double comprimentoTerreno, double larguraTerreno)
+        {
+            return comprimentoTerreno * larguraTerreno;
         }
     }
 }

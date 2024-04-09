@@ -4,22 +4,20 @@
     {
         static void Main(string[] args)
         {
-            /*
-             * Realizar uma operação com base em dois valores inteiros A e B.
-             * Exemplo de entrada: A = 3, B = 3
-             * Exemplo de saída: A + B = 6.
-             */
-            int A, B;
+            //Realizar uma operação com base em dois valores inteiros A e B.
 
-            Console.WriteLine("Entre com um número:");
-            A = Convert.ToInt32(Console.ReadLine());
+            //Exemplo de entrada: A = 3, B = 3
+            //Exemplo de saída: A + B = 6.
 
-            Console.WriteLine("Entre com um segundo número:");
-            B = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(">>> Realizar uma operação com base em dois valores inteiros A e B <<< \n");
 
-            var soma = (A + B);
+            Console.Write("Digite o valor de A: ");
+            int valorA = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"Resultado da soma é {soma}");
+            Console.Write("Digite o valor de B: ");
+            int valorB = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"\nA soma de A+B é: {(valorA + valorB)}");
         }
     }
 }
